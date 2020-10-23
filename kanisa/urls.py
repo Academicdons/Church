@@ -5,6 +5,7 @@ urlpatterns = [
     path('bot/home/', views.bothome, name='bothome'),
     path('start/first/bot/', views.startbotone, name='startbotone'),
     path('second/bot/initiate/', views.startbottwo, name='startbottwo'),
+    path('all/bot/done/', views.startbotthree, name='startbotthree'),
     path('', views.home, name='home'),
     path('blogs', views.post_list, name='blog'),
     path('contact', views.contact, name='contact'),

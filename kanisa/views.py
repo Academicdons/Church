@@ -12,6 +12,7 @@ from django.template import loader
 from django.http import HttpResponse
 from .sharkbot import *
 from .bot import *
+from .kabot import *
 from .forms import *
 import random
 
@@ -222,6 +223,17 @@ def startbotone(request):
     return HttpResponse(template.render(context, request))
 
 def startbottwo(request):
+    user = request.user
+    name = user.username
+    ed = KaEssaySharkBot()
+    print("The bot is now starting, there will be no further printing of information")
+    ed.init_bot()
+    template = loader.get_template('bot3.html')
+    context = {'name': name}
+
+    return HttpResponse(template.render(context, request))
+
+def startbotthree(request):
     user = request.user
     name = user.username
     ed = GeeBotPro()
