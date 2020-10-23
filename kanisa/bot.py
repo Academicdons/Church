@@ -58,13 +58,13 @@ class GeeBotPro(object):
     def get_driver(self, num):
         if self.browser.lower() == 'firefox':
 
-            opts = FirefoxOptions()
-            opts.add_argument("--headless")
-            driver = webdriver.Firefox(firefox_options=opts)
+            botOptions = FirefoxOptions()
+            botOptions.add_argument("--headless")
+            driver = webdriver.Firefox(firefox_options=botOptions)
         else:
-            opts = FirefoxOptions()
-            opts.add_argument("--headless")
-            driver = webdriver.Firefox(firefox_options=opts)
+            botOptions = FirefoxOptions()
+            botOptions.add_argument("--headless")
+            driver = webdriver.Firefox(firefox_options=botOptions)
 
         driver.set_window_position(num * 150, num * 100)
         driver.set_window_size(1020, 690)
