@@ -6,7 +6,6 @@ from selenium import webdriver
 from selenium.common.exceptions import (
     ElementClickInterceptedException, TimeoutException, NoSuchElementException
 )
-from selenium.webdriver import FirefoxOptions
 from selenium.webdriver.support.events import EventFiringWebDriver, AbstractEventListener
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -56,19 +55,17 @@ class GeeBotPro(object):
         self.browser = 'chrome'
 
     def get_driver(self, num):
-        if self.browser.lower() == 'firefox':
-
-            botOptions = FirefoxOptions()
-            botOptions.add_argument("--headless")
-            driver = webdriver.Firefox(firefox_options=botOptions)
+        if self.browser.lower() == 'chrome':
+            botOptions = webdriver.ChromeOptions()
+            botOptions.add_argument('headless')
+            driver = webdriver.Chrome(options=botOptions)
         else:
-            botOptions = FirefoxOptions()
-            botOptions.add_argument("--headless")
-            driver = webdriver.Firefox(firefox_options=botOptions)
+            botOptions = webdriver.ChromeOptions()
+            botOptions.add_argument('headless')
+            driver = webdriver.Chrome(options=botOptions)
 
         driver.set_window_position(num * 150, num * 100)
         driver.set_window_size(1020, 690)
-
         edriver = EventFiringWebDriver(driver, MyListener(config=self.config_to_json()))
         return edriver
 
@@ -85,7 +82,7 @@ class GeeBotPro(object):
         self.botOptions.add_argument('headless')
         self.botOptions.add_argument('window-size=1200x600')
 
-        self.bot = webdriver.Firefox(options=self.botOptions)
+        self.bot = webdriver.Chrome(options=self.botOptions)
 
     def login(self, driver):
         try:

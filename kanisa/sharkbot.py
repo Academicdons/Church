@@ -11,7 +11,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 import json
-from selenium.webdriver import FirefoxOptions
 from collections import OrderedDict
 from .sindano import *
 
@@ -91,30 +90,16 @@ class EssaySharkBot():
 
         self.drivers = OrderedDict()
 
-    # def get_driver(self, num):
-    #     if self.browser.lower() == 'chrome':
-    #         botOptions = webdriver.FirefoxOptions()
-    #         botOptions.add_argument('--headless')
-    #         driver = webdriver.Firefox(firefox_options=botOptions)
-    #     else:
-    #         botOptions = webdriver.Firefox()
-    #         botOptions.add_argument('--headless')
-    #         driver = webdriver.Firefox(firefox_options=botOptions)
-    #
-    #     driver.set_window_position(num * 150, num * 100)
-    #     driver.set_window_size(1020, 690)
-    #     edriver = EventFiringWebDriver(driver, MyListener(config=self.config_to_json()))
-    #     return edriver
     def get_driver(self, num):
         if self.browser.lower() == 'firefox':
-
-            botOptions = FirefoxOptions()
-            botOptions.add_argument("--headless")
-            driver = webdriver.Firefox(firefox_options=botOptions)
+            print("Please use chrome")
         else:
-            opts = FirefoxOptions()
-            opts.add_argument("--headless")
-            driver = webdriver.Firefox(firefox_options=botOptions)
+            botOptions = webdriver.ChromeOptions()
+            botOptions.add_argument('headless')
+            #botOptions.add_argument('window-size=1200x600')
+
+            driver = webdriver.Chrome(options=botOptions)
+            #driver = webdriver.Chrome(get_path('assets/chrome/chromedriver'), options=botOptions)
 
         driver.set_window_position(num * 150, num * 100)
         driver.set_window_size(1020, 690)
