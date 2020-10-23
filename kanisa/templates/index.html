@@ -1,10 +1,402 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Lift Up Jesus Global Ministries | Kenya</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="freehtml5.co" />
 
-</body>
+	<!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FreeHTML5.co
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700" rel="stylesheet"
+	>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="{% static 'css/flexslider.css' %}">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+	<!-- Modernizr JS -->
+	<script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="{% static 'js/respond.min.js' %}"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">
+	<nav class="fh5co-nav" role="navigation">
+		<div class="container-wrap">
+			<div class="top-menu">
+				<div class="row">
+					<div class="col-md-12 col-offset-0 text-center">
+						<div id="fh5co-logo"><a href="{% url 'home' %}">Lift Up Jesus Global Ministries</a></div>
+					</div>
+					<div class="col-md-12 col-md-offset-0 text-center menu-1">
+						<ul>
+							<li class="active"><a href="{% url 'home' %}">Home</a></li>
+							<li><a href="{% url 'sermons' %}">Sermons</a></li>
+							<li><a href="{% url 'blog' %}">Blogs</a></li>
+<!--							<li class="has-dropdown">-->
+<!--								<a href="news.html">News</a>-->
+<!--								<ul class="dropdown">-->
+<!--									<li><a href="#">Ministry</a></li>-->
+<!--									<li><a href="#">Medical Missionary</a></li>-->
+<!--									<li><a href="#">Country Living</a></li>-->
+<!--									<li><a href="#">Gospel Workers</a></li>-->
+<!--								</ul>-->
+<!--							</li>-->
+							<li><a href="{% url 'events' %}">Events</a></li>
+							<li><a href="{% url 'about' %}">About</a></li>
+							<li><a href="{% url 'contact' %}">Contact</a></li>
+							<li><a href="#" class="donate">Donate</a></li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</nav>
+	<div class="container-wrap">
+		<aside id="fh5co-hero">
+			<div class="flexslider">
+				<ul class="slides">
+			   	<li style="background-image: url({% static 'images/img_bg_1.jpg' %});">
+			   		<div class="overlay"></div>
+			   		<div class="container-fluid">
+			   			<div class="row">
+				   			<div class="col-md-6 col-md-offset-3 text-center">
+				   				<div class="slider-text">
+					   				<div class="slider-text-inner">
+					   					<h1>Living &amp; Sharing the Gospel of God</h1>
+											<h2>Welcome to our Church Website We are a congration of believers who have seen the healing and might Powers of the Almighty God</a></h2>
+											<p><a class="btn btn-primary btn-demo popup-vimeo" href="{% url 'sermons' %}"> Our sermons</a> <a class="btn btn-primary btn-learn"  href="{% url 'contact' %}">Contact us! <i class="icon-arrow-right3"></i></a></p>
+					   				</div>
+				   				</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>
+			   	<li style="background-image: url(images/img_bg_2.jpg);">
+			   		<div class="overlay"></div>
+			   		<div class="container-fluid">
+			   			<div class="row">
+				   			<div class="col-md-6 col-md-offset-3 text-center">
+				   				<div class="slider-text">
+					   				<div class="slider-text-inner">
+					   					<h1>Tell The World</h1>
+											<h2>Jesus said to them again, “Peace be with you. As the Father has sent me, even so I am sending you.”</a></h2>
+											<p><a class="btn btn-primary btn-demo popup-vimeo" href="{% url 'sermons' %}"> Our sermons</a> <a class="btn btn-primary btn-learn"  href="{% url 'contact' %}">Contact us! <i class="icon-arrow-right3"></i></a></p>
+					   				</div>
+					   			</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>
+			   	<li style="background-image: url(images/img_bg_3.jpg);">
+			   		<div class="overlay"></div>
+			   		<div class="container-fluids">
+			   			<div class="row">
+				   			<div class="col-md-6 col-md-offset-3 text-center">
+				   				<div class="slider-text">
+					   				<div class="slider-text-inner text-center">
+					   					<h1>Know More About Jesus</h1>
+											<h2>Our church gives you the optimum conditions to help you alleviate your spiritual needs.</a></h2>
+											<p><a class="btn btn-primary btn-demo popup-vimeo" href="{% url 'sermons' %}"> Our sermons</a> <a class="btn btn-primary btn-learn"  href="{% url 'contact' %}">Contact us! <i class="icon-arrow-right3"></i></a></p>
+					   				</div>
+					   			</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>
+			  	</ul>
+		  	</div>
+		</aside>
+		<div id="fh5co-intro">
+			<div class="row animate-box">
+				<div class="col-md-12 col-md-offset-0 text-center">
+					<h2>Living in God's Amazing Grace!</h2>
+					<span>Be imitators of me, as I am of Christ. Now I commend you because you remember me in everything and maintain the traditions even as I delivered them to you.</span>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div id="fh5co-counter" class="fh5co-counters">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center animate-box">
+					<p>For “everyone who calls on the name of the Lord will be saved.” How then will they call on him in whom they have not believed? And how are they to believe in him of whom they have never heard? And how are they to hear without someone preaching?</p>
+					</div>
+			</div>
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="row">
+						<div class="col-md-3 col-sm-6 col-xs-6 text-center">
+							<span class="fh5co-counter js-counter" data-from="0" data-to="9452" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="fh5co-counter-label">Members</span>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-6 text-center">
+							<span class="fh5co-counter js-counter" data-from="0" data-to="214" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="fh5co-counter-label">Ministries</span>
+						</div>
+						<div class="clearfix visible-sm-block visible-xs-block"></div>
+						<div class="col-md-3 col-sm-6 col-xs-6 text-center">
+							<span class="fh5co-counter js-counter" data-from="0" data-to="433" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="fh5co-counter-label">Classes</span>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-6 text-center">
+							<span class="fh5co-counter js-counter" data-from="0" data-to="512" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="fh5co-counter-label">Activities</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="fh5co-services" class="fh5co-light-grey">
+			<div class="row animate-box">
+				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+					<h2>Services</h2>
+					<p> In all things I have shown you that by working hard in this way we must help the weak and remember the words of the Lord Jesus, how he himself said, ‘It is more blessed to give than to receive.’”</p>
+				</div>
+			</div>
+			<div class="row">
+
+				{% for services in services %}
+				<div class="col-md-4 animate-box">
+					<div class="services">
+						<a href="#" class="img-holder"><img class="img-responsive" src="{{services.imageURL}}" alt="Free HTML5 Website Template by freehtml5.co"></a>
+						<div class="desc">
+							<h3><a href="#">{{ services.title }}</a></h3>
+							<p>{{ services.body|truncatewords:20|linebreaks }}</p>
+<!--							<a href="#">Read More <i class="icon-arrow-right3"></i></a>-->
+						</div>
+					</div>
+				</div>
+				{% empty %}
+<p>We havent started offering services yet.</p>
+
+                            {% endfor %}
+			</div>
+		</div>
+
+		<div id="fh5co-sermon">
+			<div class="row animate-box">
+				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+					<h2>Our Sermons</h2>
+					<p>You shall have no other gods before me. You shall not make for yourself an idol in the form of anything in heaven above or on the earth beneath or in the waters below.</p>
+				</div>
+			</div>
+			<div class="row">
+
+				{% for sermons in sermons %}
+				<div class="col-md-4 text-center animate-box">
+					<div class="sermon-entry">
+						<div class="sermon" style="background-image: url({{sermons.imageURL}});">
+							<div class="play">
+<!--						<a href="{{ sermons.get_absolute_url }}" class="img-holder"><img class="img-responsive" src="" alt="#"></a>-->
+							</div>
+						</div>
+						<h3>{{ sermons.publish }}</h3>
+						<h3>{{ sermons.title }}</h3>
+						<span>{{ sermons.author }}</span>
+						<p>{{ sermons.body|truncatewords:20|linebreaks }}</p>
+						<a href="{{ sermons.get_absolute_url }}">Read More <i class="icon-arrow-right3"></i></a>
+					</div>
+				</div>
+				{% empty %}
+<p>There are no Sermons yet. Kindly subscribe to our newsletter to be on the know</p>
+
+                            {% endfor %}
+
+			</div>
+		</div>
+		<div id="fh5co-bible-verse">
+			<div class="overlay"></div>
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="row animate-box">
+						<div class="owl-carousel owl-carousel-fullwidth">
+
+							{% for quotes in quotes %}
+							<div class="item">
+								<div class="bible-verse-slide active text-center">
+									<blockquote>
+										<p>&ldquo;{{ quotes.bibleverse }} &rdquo;</p>
+										<span>~ {{ quotes.speaker}}</span>
+									</blockquote>
+								</div>
+							</div>
+							{% empty %}
+<p>There are no Activities yet. Kindly subscribe to our newsletter to be on the know</p>
+
+                            {% endfor %}
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="fh5co-events">
+			<div class="row animate-box">
+				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+					<h2>Our Events</h2>
+					<p>“Be kind and compassionate to one another, forgiving each other, just as in Christ God forgave you.” “But love your enemies, and do good, and lend, expecting nothing in return, and your reward will be great, and you will be sons of the Most High, for he is kind to the ungrateful and the evil.”</p>
+				</div>
+			</div>
+			<div class="row">
+
+								{% for events in events %}
+
+				<div class="col-md-4 animate-box">
+					<div class="events-entry">
+						<a href="{{ events.get_absolute_url }}" class="img-holder"><img class="img-responsive" src="{{events.imageURL}}" alt="Free HTML5 Website Template by freehtml5.co"></a>
+
+						<span class="date">{{ events.status}}</span>
+						<span class="date">{{ events.publish}}</span>
+						<h3><a href="{{ events.get_absolute_url }}">{{ events.title }}</a></h3>
+						<p>{{ events.body|truncatewords:20|linebreaks }}</p>
+						<a href="{{ events.get_absolute_url }}">Read More <i class="icon-arrow-right3"></i></a>
+					</div>
+				</div>
+				{% empty %}
+<p>There are no Activities yet. Kindly subscribe to our newsletter to be on the know</p>
+
+                            {% endfor %}
+
+			</div>
+		</div>
+		<div id="fh5co-news" class="fh5co-light-grey">
+			<div class="row animate-box">
+				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+					<h2>Our Blogs</h2>
+					<p>One who has unreliable friends soon comes to ruin, but there is a friend who sticks closer than a <brother class=""></brother></p>
+				</div>
+			</div>
+			<div class="row">
+
+				{% for post in posts %}
+
+				<div class="col-md-3 animate-box">
+					<div class="news">
+						<a href="{{ post.get_absolute_url }}" class="img-holder"><img class="img-responsive" src="{{post.imageURL}}" alt="Free HTML5 Website Template by freehtml5.co"></a>
+						<div class="desc">
+							<span class="date">{{ post.publish }}</span>
+							<span class="date">By: {{ post.author }}</span>
+							<h3><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h3>
+							<p>{{ post.body|truncatewords:20|linebreaks }}</p>
+							<a href="{{ post.get_absolute_url }}">Read More <i class="icon-arrow-right3"></i></a>
+						</div>
+					</div>
+				</div>
+				{% empty %}
+<p>There are no Blogs yet. Kindly check again later</p>
+
+                            {% endfor %}
+
+
+			</div>
+		</div>
+	</div><!-- END container-wrap -->
+
+	<div class="container-wrap">
+		<footer id="fh5co-footer" role="contentinfo">
+			<div class="col-md-4 text-center">
+				<h3>Ruiru, Kiambu, Kenya</h3>
+			</div>
+			<div class="col-md-4 text-center">
+				<h2><a href="#">Lift Up Jesus Global Ministries Kenya</a></h2>
+			</div>
+			<div class="col-md-4 text-center">
+				<p>
+					<ul class="fh5co-social-icons">
+						<li><a href="#"><i class="icon-twitter2"></i></a></li>
+						<li><a href="#"><i class="icon-facebook2"></i></a></li>
+						<li><a href="#"><i class="icon-dribbble2"></i></a></li>
+					</ul>
+				</p>
+			</div>
+			<div class="row copyright">
+				<div class="col-md-12 text-center">
+					<p>
+						<small class="block">&copy; 2020. All Rights Reserved.</small>
+						<small class="block">Designed by <a href="#" target="_blank">GeeLabs</a> Demo Images: <a href="#" target="_blank">Geelabs</a></small>
+					</p>
+				</div>
+			</div>
+		</footer>
+	</div><!-- END container-wrap -->
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+	<!-- jQuery Easing -->
+	<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+	<!-- Bootstrap -->
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<!-- Waypoints -->
+	<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+	<!-- Flexslider -->
+	<script src="{% static 'js/jquery.flexslider-min.js' %}"></script>
+	<!-- Carousel -->
+	<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+	<!-- Magnific Popup -->
+	<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+	<script src="{% static 'js/magnific-popup-options.js' %}"></script>
+	<!-- Counters -->
+	<script src="{% static 'js/jquery.countTo.js' %}"></script>
+	<!-- Main -->
+	<script src="{% static 'js/main.js' %}"></script>
+
+	</body>
 </html>
+

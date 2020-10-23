@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to work</title>
+      <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+    <style>
+        .masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.left {
+  width: 50%;
+  margin: auto;
+}
+
+.right {
+  width: 50%;
+  margin: auto;
+}
+    </style>
+</head>
+<body>
+<!--<script>-->
+<!--    $("#start").change(function () {-->
+<!--      var username = $(this).val();-->
+
+<!--      $.ajax({-->
+<!--        url: '/ajax/startbotone/',-->
+<!--      });-->
+
+<!--    });-->
+<!--  </script>-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Workers.io</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Welcome {{name}}
+                <span class="sr-only">(current)</span>
+              </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Log Out</a>
+        </li>
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" href="#">Services</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" href="#">Contact</a>-->
+<!--        </li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Full Page Image Header with Vertically Centered Content -->
+<header class="masthead">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12 text-center">
+        <h1 class="font-weight-light">Welcome to Work.IO </h1>
+        <p class="lead">Your number one test area</p>
+          <div class="row">
+              <div class="left">
+                  <button class="lead btn btn-primary btn-inline" onclick="F1()" id="start" type="button" value="1">Start Worker One</button>
+                  <button class="lead btn btn-danger btn-inline" onclick="F2()" id="stop" type="button" style="display:none;" value="2">Stop Worker One</button>
+              </div>
+<!--              <div class="right">-->
+<!--                  <button class="lead btn btn-primary btn-inline" onclick="F3()" id="start1" type="button">Start Worker Two</button>-->
+<!--                  <button class="lead btn btn-danger btn-inline" onclick="F4()" id="stop1" type="button" style="display:none;">Stop Worker Two</button>-->
+<!--              </div>-->
+          </div>
+
+
+
+
+          <h3 id="stopinfo" style="display:none;" >Thank you for spending your Quality time with us.</h3>
+          <h3 id="stopinfo1" style="display:none;" >Welcome Back some time <span style="color:green;">{{name}}</span></h3>
+      </div>
+    </div>
+  </div>
+</header>
+<script>
+function F1()
+{
+  var x = document.getElementById("stop");
+  if (x.style.display === "none") {
+    location.href='{% url 'startbotone' %}';
+    x.style.display = "block";
+    x.style.margin= "auto";
+    document.querySelector("#start").hidden = true;
+  } else {
+    x.style.display = "none";
+  }
+}
+
+
+</script>
+<script>
+function F2()
+{
+  var x = document.getElementById("stopinfo");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    x.style.margin= "auto";
+    document.querySelector("#stop").hidden = true;
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+<script>
+function F3()
+{
+  var x = document.getElementById("stop1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    x.style.margin= "auto";
+    document.querySelector("#start1").hidden = true;
+  } else {
+    x.style.display = "none";
+  }
+}
+
+
+</script>
+<script>
+function F4()
+{
+  var x = document.getElementById("stopinfo1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    x.style.margin= "auto";
+    document.querySelector("#stop1").hidden = true;
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+<!--&lt;!&ndash; Page Content &ndash;&gt;-->
+<!--<section class="py-5">-->
+<!--  <div class="container">-->
+<!--    <h2 class="font-weight-light">Page Content</h2>-->
+<!--    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>-->
+<!--  </div>-->
+<!--</section>-->
+</body>
+</html>
