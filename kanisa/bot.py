@@ -82,7 +82,7 @@ class GeeBotPro(object):
         self.botOptions.add_argument('headless')
         self.botOptions.add_argument('window-size=1200x600')
 
-        self.bot = webdriver.Chrome(options=self.botOptions)
+        self.bot = webdriver.Firefox(options=self.botOptions)
 
     def login(self, driver):
         try:
